@@ -130,7 +130,7 @@ public class CorsConfig {
     @Bean  
     public CorsFilter corsFilter() {  
         CorsConfiguration config = new CorsConfiguration();  
-        config.addAllowedOrigin("https://your-frontend.onrender.com");  
+        config.addAllowedOrigin("https://job-queue-system-front.onrender.com");  
         config.addAllowedHeader("*");  
         config.addAllowedMethod("*");  
 
@@ -165,8 +165,6 @@ Backend Deployment (Render Web Service):
 4. Add environment variables  
 5. Deploy  
 
-Backend URL example:
-https://your-backend-name.onrender.com  
 
 ---
 
@@ -174,7 +172,7 @@ Frontend Configuration:
 
 Create `.env` file inside frontend root:
 
-VITE_API_BASE_URL=https://your-backend-name.onrender.com  
+VITE_API_BASE_URL=https://job-queue-system-t08m.onrender.com
 
 Create src/config.js:
 
@@ -196,8 +194,7 @@ Frontend Deployment (Render Static Site):
    dist  
 
 Frontend URL example:
-https://your-frontend-name.onrender.com  
-
+https://job-queue-system-front.onrender.com
 ---
 
 # 🧪 API Endpoints
