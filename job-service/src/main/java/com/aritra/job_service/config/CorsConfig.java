@@ -13,7 +13,7 @@ public class CorsConfig {
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
 
-        config.addAllowedOrigin("*");  // We will restrict later
+        config.addAllowedOrigin("https://job-queue-system-front.onrender.com");  // We will restrict later
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
 
